@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7773C9622A5454700DBFE16 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7773C9522A5454700DBFE16 /* Coordinate.swift */; };
+		A7BB9D7222A5172500FF7A51 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB9D7122A5172500FF7A51 /* MapViewController.swift */; };
 		A7BCD6E322A2A651005DFF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD6E222A2A651005DFF39 /* AppDelegate.swift */; };
 		A7BCD6E522A2A651005DFF39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD6E422A2A651005DFF39 /* ViewController.swift */; };
 		A7BCD6E822A2A651005DFF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BCD6E622A2A651005DFF39 /* Main.storyboard */; };
@@ -17,11 +19,12 @@
 		A7BCD6F922A2AD2C005DFF39 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD6F822A2AD2C005DFF39 /* JSONDownloader.swift */; };
 		A7BCD6FB22A2AD55005DFF39 /* OpenWeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD6FA22A2AD55005DFF39 /* OpenWeatherError.swift */; };
 		A7BCD6FD22A2AE13005DFF39 /* OpenWeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD6FC22A2AE13005DFF39 /* OpenWeatherAPIClient.swift */; };
-		A7BCD70122A2C578005DFF39 /* CityID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD70022A2C578005DFF39 /* CityID.swift */; };
 		A7BCD70322A2C7A1005DFF39 /* ChosenCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCD70222A2C7A1005DFF39 /* ChosenCityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7773C9522A5454700DBFE16 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		A7BB9D7122A5172500FF7A51 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A7BCD6DF22A2A651005DFF39 /* OpenWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCD6E222A2A651005DFF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7BCD6E422A2A651005DFF39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +37,6 @@
 		A7BCD6F822A2AD2C005DFF39 /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		A7BCD6FA22A2AD55005DFF39 /* OpenWeatherError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherError.swift; sourceTree = "<group>"; };
 		A7BCD6FC22A2AE13005DFF39 /* OpenWeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPIClient.swift; sourceTree = "<group>"; };
-		A7BCD70022A2C578005DFF39 /* CityID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityID.swift; sourceTree = "<group>"; };
 		A7BCD70222A2C7A1005DFF39 /* ChosenCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,7 @@
 		A711267122A450EB0029E31F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A7BB9D7122A5172500FF7A51 /* MapViewController.swift */,
 				A7BCD70222A2C7A1005DFF39 /* ChosenCityViewController.swift */,
 				A7BCD6E422A2A651005DFF39 /* ViewController.swift */,
 			);
@@ -69,8 +72,8 @@
 		A711267322A451350029E31F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A7BCD70022A2C578005DFF39 /* CityID.swift */,
 				A7BCD6F422A2AB50005DFF39 /* CurrentWeather.swift */,
+				A7773C9522A5454700DBFE16 /* Coordinate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,9 +202,10 @@
 				A7BCD6FD22A2AE13005DFF39 /* OpenWeatherAPIClient.swift in Sources */,
 				A7BCD6E522A2A651005DFF39 /* ViewController.swift in Sources */,
 				A7BCD6FB22A2AD55005DFF39 /* OpenWeatherError.swift in Sources */,
+				A7BB9D7222A5172500FF7A51 /* MapViewController.swift in Sources */,
 				A7BCD6F522A2AB50005DFF39 /* CurrentWeather.swift in Sources */,
+				A7773C9622A5454700DBFE16 /* Coordinate.swift in Sources */,
 				A7BCD6F922A2AD2C005DFF39 /* JSONDownloader.swift in Sources */,
-				A7BCD70122A2C578005DFF39 /* CityID.swift in Sources */,
 				A7BCD6E322A2A651005DFF39 /* AppDelegate.swift in Sources */,
 				A7BCD6F722A2AC74005DFF39 /* CurrentWeatherViewModel.swift in Sources */,
 				A7BCD70322A2C7A1005DFF39 /* ChosenCityViewController.swift in Sources */,

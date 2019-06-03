@@ -25,7 +25,7 @@ class JSONDownloader {
     
     func jsonTask(with request: URLRequest, completionHandler completion: @escaping JSONTaskCompletionHandler)  -> URLSessionDataTask {
         let task = session.dataTask(with: request) { data, response , error in
-            print(response)
+//            print(response)
             // Convert to HTTP Response
             guard let httpResponse = response as? HTTPURLResponse else {
                 completion(nil, .requestFailed)
@@ -37,7 +37,7 @@ class JSONDownloader {
                     do {
                         let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]
                         completion(json, nil)
-                        print("The json response: \(String(describing: json))")
+//                        print("The json response: \(String(describing: json))")
                     } catch {
                         completion(nil, .jsonConversionFailure)
                     }

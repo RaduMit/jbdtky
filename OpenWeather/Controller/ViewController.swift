@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     var chosenCityID = Int()
     var currentChosenLocation = String()
     
+    var locationLatitude = Double()
+    var locationLongitude = Double()
+    
     let client = OpenWeatherAPIClient()
     
     override func viewDidLoad() {
@@ -42,9 +45,10 @@ class ViewController: UIViewController {
      func getCurrentWeather() {
         
         
-        let cityID = CityID(cityID: chosenCityID)
+//        let cityID = CityID(cityID: chosenCityID)
+        let coordinate = Coordinate(latitude: locationLatitude, longitude: locationLongitude)
         
-        client.getCurrentWeather(at: cityID) { [unowned self] currentWeather, error in
+        client.getCurrentWeather(at: coordinate) { [unowned self] currentWeather, error in
         if let currentWeather = currentWeather {
                 let viewModel = CurrentWeatherViewModel(model: currentWeather)
                 self.displayWeather(using: viewModel)

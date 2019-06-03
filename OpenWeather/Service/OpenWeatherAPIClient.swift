@@ -28,9 +28,9 @@ class OpenWeatherAPIClient {
     
     typealias CurrentWeatherCompletionHandler = (CurrentWeather?, OpenWeatherError?) -> Void
     
-    func getCurrentWeather(at cityID: CityID, completionHandler completion: @escaping CurrentWeatherCompletionHandler) {
+    func getCurrentWeather(at coordinate: Coordinate, completionHandler completion: @escaping CurrentWeatherCompletionHandler) {
     
-         guard let url = URL(string: "weather?\(cityID.description)&APPID=\(apiKey)", relativeTo: baseUrl) else {
+         guard let url = URL(string: "weather?\(coordinate.description)&APPID=\(apiKey)", relativeTo: baseUrl) else {
             completion(nil, .invalidUrl)
             return
         }
@@ -86,7 +86,7 @@ class OpenWeatherAPIClient {
                     return
                 }
                 
-                print("current: \(currentWeather)")
+//                print("current: \(currentWeather)")
                 
                 completion(currentWeather, nil)
             }
@@ -113,7 +113,7 @@ class OpenWeatherAPIClient {
             } else {
                 // No errors found.
                 if let res = response as? HTTPURLResponse {
-                    print("Downloaded picture with response code \(res.statusCode)")
+//                    print("Downloaded picture with response code \(res.statusCode)")
                     if let imageData = data {
                         let image = UIImage(data: imageData)
                         // Do something with your image.
